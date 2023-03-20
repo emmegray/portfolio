@@ -10,7 +10,6 @@ export default function Layout({ children }) {
             <Container>
                 <div style={{
                     padding: "5rem",
-                    textAlign: "center"
                 }}>
                     <h1>{children}</h1>
                 </div>

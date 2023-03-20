@@ -4,6 +4,8 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import { Nav } from 'react-bootstrap';
 
+import styles from './Header.module.css'
+
 const pages = [
     { name: "Home", link: "/" },
     { name: "About", link: "/about" },
@@ -19,8 +21,8 @@ export default function Header() {
                     <Navbar.Brand href="#">
                         <Nav>
                             {pages.map(page => (
-                                <Link key={page.name} passHref href={page.link}>
-                                    <Nav.Link>{page.name}</Nav.Link>
+                                <Link key={page.name} passHref href={page.link} >
+                                    <Nav.Link style={{color: 'white'}}>{page.name}</Nav.Link>
                                 </Link>
                             ))}
                         </Nav>

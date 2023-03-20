@@ -3,13 +3,14 @@ import Link from 'next/link';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import styles from './Footer.module.css';
 
 const socials = [
-    { name: "GitHub", link: "https://github.com/emmegray", icon: "fa-round" },
-    { name: "LinkedIn", link: "https://www.linkedin.com/in/manuela-ienuso-a44190111/", icon: "fa-round" },
-    { name: "Twitch", link: "https://www.twitch.tv/emmegray", icon: "fa-round" },
+    { name: "GitHub", link: "https://github.com/emmegray", icon: "fa-brands fa-github" },
+    { name: "LinkedIn", link: "https://www.linkedin.com/in/manuela-ienuso-a44190111/", icon: "fa-brands fa-linkedin" },
+    { name: "Twitch", link: "https://www.twitch.tv/emmegray", icon: "fa-brands fa-twitch" },
 ];
 
 export default function Footer() {
@@ -20,8 +21,10 @@ export default function Footer() {
                     <Nav>
                         {socials.map(social => (
                             <Link key={social.name} href={social.link} passHref>
-                                <Nav.Link>{social.name}</Nav.Link>
-                            </Link>
+                                <Nav.Link>
+                                <FontAwesomeIcon icon={social.icon} size="lg"/>
+                                </Nav.Link>
+                            </Link>                            
                         ))}
                     </Nav>
                 </Container>
