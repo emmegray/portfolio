@@ -14,18 +14,18 @@ export default function App() {
       <div class="container col-xxl-12">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6 justify-content-center">
-            <img src="works/material/Emme patata.png" width={400} />
+            <img id="emme-patata" src="works/material/Emme patata.png" width={400} />
           </div>
           <div class="col-lg-6">
-            <h1 class="display-5 fw-bold lh-1 mb-3">
+            <h1 class="display-5 fw-bold lh-1 mb-3 text-white">
               Ciao! <FontAwesomeIcon icon={faMusic} bounce size="2xs" />
               <br></br>
               I am <b>Manuela</b>
             </h1>
-            <h2>
+            <h2 class="text-white">
               Frontend Developer, Digital Artist and Twitch Streamer from Italy
             </h2>
-            <p class="lead">
+            <p class="lead text-white" >
               I'm a creative chill person with the passion of learning new things while destroying them to understand how they work
             </p>
           </div>

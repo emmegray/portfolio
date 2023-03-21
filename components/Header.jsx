@@ -16,17 +16,21 @@ const pages = [
 export default function Header() {
     return (
         <header>
-            <Navbar expand="lg" fixed="top" >
+            <Navbar collapseOnSelect expand="lg" expand="lg" fixed="top" >
                 <Container>
-                    <Navbar.Brand href="#">
-                        <Nav>
+                    <Navbar.Brand><img src="works/material/Grumpy.png" width={80} /></Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="justify-content-center">
                             {pages.map(page => (
                                 <Link key={page.name} passHref href={page.link} >
+                                    
                                     <Nav.Link style={{color: 'white'}}>{page.name}</Nav.Link>
+                                    
                                 </Link>
                             ))}
                         </Nav>
-                    </Navbar.Brand>
+                        </Navbar.Collapse>
                 </Container>
             </Navbar>
             {/* <ul>
