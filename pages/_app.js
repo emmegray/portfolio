@@ -8,7 +8,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 config.autoAddCss = false
 library.add(fab)
 
-import styles from './index.css';
+import styles from './index.scss';
 
 export default function MyApp({ Component, pageProps }) {
   return (
