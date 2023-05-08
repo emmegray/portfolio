@@ -6,8 +6,8 @@ export default function Contact() {
     <div className="Contact">
       <div class="container py-4">
         <span class="fs-4">Under construction, be patient!</span>
-
-        {/* <div class="p-5 mb-4 bg-light rounded-3">
+{/* 
+        <div class="p-5 mb-4 bg-light rounded-3">
           <div class="container-fluid py-5">
             <h1 class="display-5 fw-bold">Custom jumbotron</h1>
             <p class="col-md-8 fs-4">
@@ -52,8 +52,9 @@ export default function Contact() {
           </div>
         </div>
 
-        <footer class="pt-3 mt-4 text-muted border-top">© 2021</footer> */}
-      </div>
+        <footer class="pt-3 mt-4 text-muted border-top">© 2021</footer>
+      */}
+        </div> 
     </div>
   );
 }
