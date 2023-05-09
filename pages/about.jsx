@@ -6,6 +6,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faMusic } from "@fortawesome/free-solid-svg-icons";
 import { data } from "../data/data";
+import Fade from 'react-reveal/Fade';
 
 config.autoAddCss = false;
 library.add(fab, faMusic);
@@ -13,6 +14,7 @@ library.add(fab, faMusic);
 export default function About() {
   return (
     <div className="About">
+      <Fade bottom cascade distance="10%" duration={1000}>
       <div class="container col-xxl-10">
         <div class="row flex-lg-row align-items-center g-5">
           <div class="col-lg-6 polaroid">
@@ -66,6 +68,8 @@ export default function About() {
           </div>
         </div>
       </div>
+
+      </Fade>
     </div>
   );
 }
