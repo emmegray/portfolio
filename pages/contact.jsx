@@ -15,7 +15,6 @@ export default function Contact() {
               <h1 class="display-5 fw-bold lh-1 mb-3 text-white">
                 {data.Contact.Intro}
               </h1>
-              <p class="lead text-white">{data.Contact.Subtext}</p>
               {data.Contact.Socials.map((social) => (
                 <div key={social.name} >
                   <Link key={social.name} href={social.link} passHref>
