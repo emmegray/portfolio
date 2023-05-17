@@ -9,7 +9,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import Head from "next/head";
 
 config.autoAddCss = false;
-library.add(fab);
+library.add(fab, faEnvelope);
 
 import styles from "./index.scss";
 

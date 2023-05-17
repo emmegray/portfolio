@@ -16,7 +16,7 @@ export default function About() {
     <div className="About">
       <Fade bottom cascade distance="10%" duration={1000}>
       <div class="container col-xxl-10">
-        <div class="row flex-lg-row align-items-center g-5">
+        <div class="row flex-lg-row align-items-center">
           <div class="col-lg-6 polaroid">
             <a href="#" title="Hey that's me!">
               <img
@@ -56,7 +56,7 @@ export default function About() {
                 )}
               </div>
             ))}
-            <div id="emme-hype">
+            <div id="emme-hype" class="white-line">
               <img
                 src="works/material/Emme hype.gif"
                 class="d-block d-flex img-fluid "

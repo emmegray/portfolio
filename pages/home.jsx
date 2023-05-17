@@ -15,7 +15,7 @@ export default function Home() {
     <div className="Home">
       <Fade bottom big>
         <div class="container col-xxl-10">
-          <div class="row flex-lg-row-reverse align-items-center g-5">
+          <div class="row flex-lg-row-reverse align-items-center">
             <div class="col-lg-6">
               <Swing duration={1500}>
                 <img

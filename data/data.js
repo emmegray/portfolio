@@ -63,7 +63,7 @@ export const data = {
   },
 
   Contact: {
-    Intro: "Get in Touch",
+    Intro: "Get in Touch!",
     Subtext: "Want to work together or have any questions?",
     Socials: [
       {

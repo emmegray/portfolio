@@ -10,16 +10,16 @@ export default function Contact() {
     <div className="Contact" id="contact">
       <Fade bottom cascade distance="10%" duration={1000}>
         <div class="container col-xxl-10">
-          <div class="row flex-lg-row align-items-center g-5">
+          <div class="row flex-lg-row align-items-center">
             <div class="col-lg-6">
               <h1 class="display-5 fw-bold lh-1 mb-3 text-white">
                 {data.Contact.Intro}
               </h1>
               <p class="lead text-white">{data.Contact.Subtext}</p>
               {data.Contact.Socials.map((social) => (
-                <div key={social.name}>
+                <div key={social.name} >
                   <Link key={social.name} href={social.link} passHref>
-                    <div class="p-3 mb-4 bg-dark rounded-3 text-light d-flex justify-content-center">
+                    <div id="social" class="p-3 mb-4 rounded-3 text-light d-flex justify-content-center cursor">
                       <FontAwesomeIcon
                         id="contact-icon"
                         icon={social.icon}
@@ -34,7 +34,7 @@ export default function Contact() {
               ))}
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-6 white-line">
               <img
                 id="emme-show"
                 src="works/material/Emme che fa vedere cose.png"
