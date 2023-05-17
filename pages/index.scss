@@ -3,6 +3,8 @@
 //   border: 2px solid blue;
 // }
 
+// IMG and awesome things here
+
 #emme-patata {
   -webkit-animation: mover 2s infinite alternate;
   animation: mover 2s infinite alternate;
@@ -94,6 +96,16 @@
   justify-content: center;
 }
 
+#emme-show {
+  border-bottom: #ffffff 5px solid;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+// MAIN
+
 html {
   min-height: 100%;
 }
@@ -111,10 +123,12 @@ body {
 }
 
 body::after {
-  content: '';
+  content: "";
   display: block;
   height: 50px;
 }
+
+// HEADER
 
 header a {
   color: #fafafa;
@@ -157,6 +171,22 @@ header img:hover {
   transform: rotate(360deg);
 }
 
+// CONTACT
+
+#contact {
+  a {
+    text-decoration: none;
+  }
+
+  #contact-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+}
+
+// FOOTER
+
 footer {
   display: flex;
   justify-content: center;
@@ -171,7 +201,7 @@ footer {
   }
 
   a:hover {
-    color: rgb(223, 223, 223);
+    color: rgb(0, 0, 0);
     transform: scale(1.5);
   }
 }

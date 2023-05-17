@@ -1,60 +1,51 @@
 import React from "react";
-import Header from "../components/Header";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { data } from "../data/data";
+import Fade from "react-reveal/Fade";
+import Link from "next/link";
 
 export default function Contact() {
   return (
-    <div className="Contact">
-      <div class="container py-4">
-        <span class="fs-4">Under construction, be patient!</span>
-{/* 
-        <div class="p-5 mb-4 bg-light rounded-3">
-          <div class="container-fluid py-5">
-            <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-            <p class="col-md-8 fs-4">
-              Using a series of utilities, you can create this jumbotron, just
-              like the one in previous versions of Bootstrap. Check out the
-              examples below for how you can remix and restyle it to your
-              liking.
-            </p>
-            <button class="btn btn-primary btn-lg" type="button">
-              Example button
-            </button>
-          </div>
-        </div>
+    <div className="Contact" id="contact">
+      <Fade bottom cascade distance="10%" duration={1000}>
+        <div class="container col-xxl-10">
+          <div class="row flex-lg-row align-items-center g-5">
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold lh-1 mb-3 text-white">
+                {data.Contact.Intro}
+              </h1>
+              <p class="lead text-white">{data.Contact.Subtext}</p>
+              {data.Contact.Socials.map((social) => (
+                <div key={social.name}>
+                  <Link key={social.name} href={social.link} passHref>
+                    <div class="p-3 mb-4 bg-dark rounded-3 text-light d-flex justify-content-center">
+                      <FontAwesomeIcon
+                        id="contact-icon"
+                        icon={social.icon}
+                        style={{ color: "#FFFFFF" }}
+                        size="m"
+                      />
 
-        <div class="row align-items-md-stretch">
-          <div class="col-md-6">
-            <div class="h-100 p-5 text-white bg-dark rounded-3">
-              <h2>Change the background</h2>
-              <p>
-                Swap the background-color utility and add a `.text-*` color
-                utility to mix up the jumbotron look. Then, mix and match with
-                additional component themes and more.
-              </p>
-              <button class="btn btn-outline-light" type="button">
-                Example button
-              </button>
+                      <h2>{social.name}</h2>
+                    </div>
+                  </Link>
+                </div>
+              ))}
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="h-100 p-5 bg-light border rounded-3">
-              <h2>Add borders</h2>
-              <p>
-                Or, keep it light and add a border for some added definition to
-                the boundaries of your content. Be sure to look under the hood
-                at the source HTML here as we've adjusted the alignment and
-                sizing of both column's content for equal-height.
-              </p>
-              <button class="btn btn-outline-secondary" type="button">
-                Example button
-              </button>
+
+            <div class="col-lg-6">
+              <img
+                id="emme-show"
+                src="works/material/Emme che fa vedere cose.png"
+                class="d-block mx-lg-auto img-fluid"
+                alt="Emme che fa vedere cose"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
-
-        <footer class="pt-3 mt-4 text-muted border-top">© 2021</footer>
-      */}
-        </div> 
+      </Fade>
     </div>
   );
 }

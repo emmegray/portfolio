@@ -61,4 +61,39 @@ export const data = {
       },
     ],
   },
+
+  Contact: {
+    Intro: "Get in Touch",
+    Subtext: "Want to work together or have any questions?",
+    Socials: [
+      {
+        name: "Email",
+        nickname: "manuelaienuso@gmail.com",
+        link: "mailto:manuelaienuso@gmail.com",
+        icon: "fa-solid fa-envelope",
+        style:"#FFFFFF"
+      },
+      {
+        name: "GitHub",
+        nickname: "@emmegray",
+        link: "https://github.com/emmegray",
+        icon: "fa-brands fa-github",
+        style:"#FFFFFF"
+      },
+      {
+        name: "LinkedIn",
+        nickname: "",
+        link: "https://www.linkedin.com/in/manuela-ienuso-a44190111/",
+        icon: "fa-brands fa-linkedin",
+        style:"#FFFFFF"
+      },
+      {
+        name: "Twitch",
+        nickname: "@emmegray",
+        link: "https://www.twitch.tv/emmegray",
+        icon: "fa-brands fa-twitch",
+        style:"#FFFFFF"
+      },
+    ]
+  }
 };
