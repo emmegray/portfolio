@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faMusic } from "@fortawesome/free-solid-svg-icons";
+import { data } from "../data/data";
+import Link from "next/link";
 import Swing from "react-reveal/Swing";
 import Fade from "react-reveal/Fade";
 config.autoAddCss = false;
@@ -37,14 +39,30 @@ export default function Home() {
                 Frontend Developer, Digital Artist and Twitch Streamer from
                 Italy
               </h2>
-              <p class="lead text-white">
+              <p class="lead text-white pb-3 white-line">
                 I'm a creative chill person with the passion of learning new
                 things while destroying them to understand how they work.
                 <br></br>
                 If you are curious to know more about me feel free to browse
                 this portfolio to see my work and more!
               </p>
+              {data.Contact.Socials.map((social) => (
+                
+                  <Link key={social.name} href={social.link} passHref>
+                    <div id="home-icon" class="p-3 text-light cursor">
+                      <FontAwesomeIcon
+                        id="home-icon"
+                        icon={social.icon}
+                        style={{ color: "#FFFFFF" }}
+                        size="xs"
+                      />
+                    </div>
+                  </Link>
+                
+              ))}
+                
             </div>
+          
           </div>
         </div>
       </Fade>

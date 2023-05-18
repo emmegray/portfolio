@@ -32,17 +32,7 @@ export default function Footer() {
       <Navbar>
         <Container>
           <Nav>
-            {/* {socials.map((social) => (
-              <Link key={social.name} href={social.link} passHref>
-                <Nav.Link>
-                  <FontAwesomeIcon
-                    icon={social.icon}
-                    style={{ color: "#FFFFFF" }}
-                    size="lg"
-                  />
-                </Nav.Link>
-              </Link>
-            ))} */}
+            <p class="text-white">© 2023 Emme Gray</p>
           </Nav>
         </Container>
       </Navbar>

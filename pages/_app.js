@@ -8,6 +8,10 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import Head from "next/head";
 
+import { dom } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
+
+
 config.autoAddCss = false;
 library.add(fab, faEnvelope);
 
