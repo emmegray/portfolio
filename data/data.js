@@ -13,6 +13,18 @@ export const data = {
       "Always been passionate about the world of art and technology, already at the age of 13 I began to self-taught the basics of digital and traditional design. I'm also a great lover of video games, comics and cinema, I especially love the horror genre and everything that has a exciting plot!",
     Experiences: [
       {
+        company: "Class Editori",
+        title: "Junior Web Designer",
+        subtitle: "Class Editori S.p.A. | July 2023",
+        description: "Member of the tech IT team where I developed:",
+        skills: [
+          "website development and maintenance using C#,",
+          "frontend development and web marketing campaign design,",
+          "creation and development of DEM and landing page,",
+          "management and optimization of tags and funnels and SEO optimization of digital properties."
+        ],
+      },
+      {
         company: "Entiende",
         title: "Web Developer",
         subtitle: "Entiende S.r.l. | December 2022",
@@ -27,7 +39,7 @@ export const data = {
       {
         company: "Boolean Careers",
         title: "Junior Full Stack Web Developer Trainee",
-        subtitle: "Boolean Careers | February – September 2022",
+        subtitle: "Boolean Careers | February - September 2022",
         description: `Full Stack Development course where I learned to:`,
         skills: [
           "created layout using semantic HTML5, CSS3, Bootstrap replicating web pages like Dropbox and Discord,",
@@ -94,6 +106,96 @@ export const data = {
         icon: "fa-brands fa-twitch",
         style:"#FFFFFF"
       },
+      {
+        name: "Instagram",
+        nickname: "@emme_gray",
+        link: "https://www.instagram.com/emme_gray",
+        icon: "fa-brands fa-instagram",
+        style:"#FFFFFF"
+      },
+      {
+        name: "DeviantArt",
+        nickname: "@emme-gray",
+        link: "https://www.deviantart.com/emme-gray",
+        icon: "fa-brands fa-deviantart",
+        style:"#FFFFFF"
+      },
+      {
+        name: "YouTube",
+        nickname: "@EmmeGray",
+        link: "https://www.youtube.com/@EmmeGray",
+        icon: "fa-brands fa-youtube",
+        style:"#FFFFFF"
+      },
     ]
-  }
+  },
+  
+  Works: {
+    TitleArts: "Drawing commissions:",
+    TitleEmote: "Emote commissions:",
+    Arts: [
+      {
+        alt: "Moonlight, fan art of John Martson from Red Dead Redemption for lights practice",
+        src: "works/arts/Moonlight.png",
+      },
+      {
+        alt: "Work for the MajiMonth 2020",
+        src: "works/arts/MajiMonth2020 - Hannya.png",
+      },
+      {
+        alt: "Red Dead Redemption II fan art",
+        src: "works/arts/RDR II fan art - Twitch Request.png",
+      },
+      {
+        alt: "Commission Braindamage97",
+        src: "works/arts/Commission Braindamage97 - FF7.png",
+      },
+      {
+        alt: "Commission - Xhenarjo",
+        src: "works/arts/Commission - Xhenarjo 2.png",
+      },
+      {
+        alt: "Cyberpunk",
+        src: "works/arts/ArtFight 2021 Cyberpunk OC 01.png",
+      },
+      {
+        alt: "Ash - Evil Dead doodle",
+        src: "works/arts/Ash - Evil Dead doodle.png",
+      },
+      {
+        alt: "Best way to clean John",
+        src: "works/arts/Best way to clean John.png",
+      },
+      {
+        alt: "Happy 11 Anniversary RDR",
+        src: "works/arts/Happy 11 Aniversary RDR.png",
+      },
+      {
+        alt: "Inscryption - Lonely Wizard",
+        src: "works/arts/Inscryption - Lonely Wizard.png",
+      },
+      {
+        alt: "Kofi Member reward",
+        src: "works/arts/Kofi Member reward - FEB.png",
+      },
+      {
+        alt: "Steampunk",
+        src: "works/arts/Talyn Ieiri Leo stampunk - Twitch Request.png",
+      },
+      {
+        alt: "Thomas",
+        src: "works/arts/Thomas.png",
+      },
+      {
+        alt: "Xhenarjo drawing",
+        src: "works/arts/Xhenarjo drawing 01 credit.png",
+      },
+      {
+        alt: "Zhao",
+        src: "works/arts/Zhao.png",
+      },
+    ]
+  },
 };
+
+
